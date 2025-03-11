@@ -1,0 +1,360 @@
+.body-web{
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    min-width: 100px;
+    margin: auto;
+}
+
+.btn-wm {
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.btn-w {
+    height: 30px;
+    width: 90px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    flex-shrink: 0; /* Prevents buttons from shrinking */
+}
+
+.btn-w:hover{
+    background-color: white;
+    color: black;
+}
+
+.promo-text {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Allows text to take available space */
+    max-width: 60%; /* Prevents text from being too wide */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .btn-wm {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .promo-text {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn-w {
+        width: 100px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+/* Container for Image */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* Image */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Centered Text */
+.text-overlay {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    max-width: 80%;
+    white-space: nowrap; /* Prevents line break */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds "..." if too long */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .text-overlay {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 3.5vw; /* Further reduce font size on small screens */
+    }
+}
+
+
+/* Button Group */
+.button-group {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+
+/* Buttons */
+.btn-overlay {
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.btn-overlay:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .text-overlay {
+        font-size: 6vw;
+        padding: 2vw 3vw;
+    }
+
+    /* Move buttons to left & right */
+    .button-group {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: space-between; /* Moves buttons apart */
+    }
+
+    .btn-overlay {
+        font-size: 4vw;
+        width: 120px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 8vw;
+        padding: 3vw 4vw;
+    }
+
+    .btn-overlay {
+        font-size: 4.5vw;
+        width: 110px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+.big-line{
+    background-color: white;
+    height: 40px;
+}
+
+.s-line{
+    padding-left: 50px;
+    top: 95%;
+}
+
+.one-line{
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    top: 95%;
+    position: absolute;
+}
+
+.two-line{
+    background-color: white;
+    height: 85px;
+    top: 95%;
+    position: absolute;
+    left: 26%;
+    width: 60px;
+}
+
+.three-line{
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    top: 95%;
+    position: absolute;
+    left: 35%;
+}
+
+.four-line{
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    top: 95%;
+    position: absolute;
+    left: 55%;
+}
+
+.five-line{
+    background-color: white;
+    height: 40px;
+    width: 260px;
+    top: 95%;
+    position: absolute;
+    left: 70%;
+}
+
+
+
+
+.b-box{
+    background-color: chartreuse;
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    cursor: pointer;
+}
+
+.w-box{
+    background-color: rgb(184, 178, 178);
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    cursor: pointer;
+}
+
+.p-box{
+    background-color: rgb(225, 159, 170);
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    cursor: pointer;
+}
+
+.g-box{
+    background-color: rgb(31, 214, 31);
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    cursor: pointer;
+}
+
+.b-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.biggest{
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.four-pic{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.four-pic img{
+    height: 400px;
+    cursor: pointer;
+}
+
+.adidas{
+    font-size: 60px;
+    position: absolute;
+    top: 170%;
+    left: 15%;
+    color: white;
+    font-family: "Rowdies", sans-serif;
+}
+
+.mango{
+    font-size: 60px;
+    position: absolute;
+    top: 170%;
+    left: 31%;
+    color: white;
+    font-family: "Shafarik", system-ui;
+}
+
+.asos{
+    font-size: 60px;
+    position: absolute;
+    top: 170%;
+    left: 49%;
+    color: white;
+    font-family: "Shafarik", system-ui;
+}
+
+.top{
+    font-size: 60px;
+    position: absolute;
+    top: 170%;
+    left: 68%;
+    color: white;
+}
+
+.design{
+    height: 45px;
+    width: 120px;
+    position: absolute;
+    top: 173%;
+    left: 58%;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-brand{
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    font-weight: bold;
+}
+
+.btn-b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
